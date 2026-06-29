@@ -8,6 +8,18 @@
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
+
+    <div class="theme-container">
+
+    <button class="theme-btn" data-theme="ocean">🌊 Ocean</button>
+
+    <button class="theme-btn" data-theme="dark">🌙 Dark</button>
+
+    <button class="theme-btn" data-theme="pink">🌸 Pink</button>
+
+    <button class="theme-btn" data-theme="forest">🌿 Forest</button>
+
+</div>
     <div class="choices">
         <div class="choice" id="rock">
             <img src="./images/rock.png">
@@ -18,8 +30,13 @@
         <div class="choice" id="scissor">
             <img src="./images/scissor.png">
         </div>
-
     </div>
+    
+
+    <div class="round-container">
+       <p id="round">Round: 1</p>
+    </div>
+
     <div class="score-board">
         <div class="score">
             <p id="user-score">0</p>
@@ -32,9 +49,34 @@
     </div>
 
     <div class="msg-container">
-        <p id="msg">Play your move</p>
+
+    <p id="msg">Play your move</p>
+
+    <div class="choice-display">
+
+    <div class="player-box">
+        <h3>You Chose</h3>
+        <div id="user-icon" class="choice-icon"></div>
+        <p id="user-choice"></p>
     </div>
-    <script src="app.js"></script>
+
+    <div class="player-box">
+        <h3>Computer Chose</h3>
+        <div id="computer-icon" class="choice-icon"></div>
+        <p id="computer-choice"></p>
+    </div>
+
+</div>
+
+    <button id="restart-btn">
+        Restart Game
+    </button>
+
+</div>
+     
+    <script src="script.js"></script>
 
   </body>
 </html>
+
+  
